@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Анастасия Довыденко — IT Sales · B2B</title>
+  <meta name="description" content="Анастасия Довыденко — начинающий специалист в IT-продажах: поиск и квалификация клиентов, выявление потребностей, презентация IT-решений. Минск / удалённо.">
+  <meta name="theme-color" content="#f3f1ec">
+  <meta property="og:title" content="Анастасия Довыденко — IT Sales · B2B">
+  <meta property="og:description" content="Перевожу язык IT&#8209;продуктов на язык задач бизнеса.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%236b1420'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='800' font-size='14' fill='white' text-anchor='middle' letter-spacing='-1'%3EAD%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/portrait.webp" fetchpriority="high">
+
+  <!-- Дизайн-система: порядок подключения важен -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- ================= HEADER: навигация = воронка сделки ================= -->
+  <header class="site-header" data-header>
+    <div class="site-header__bar">
+      <a href="#top" class="brand" aria-label="Анастасия Довыденко — на главную">
+        <span class="brand__mark" aria-hidden="true">AD</span>
+        <span class="brand__name">Anastasia Dovydenko</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ol class="pipeline" data-pipeline>
+          <li><a href="#about"><span class="pipeline__n">01</span>Знакомство</a></li>
+          <li><a href="#services"><span class="pipeline__n">02</span>Чем полезна</a></li>
+          <li><a href="#skills"><span class="pipeline__n">03</span>Навыки</a></li>
+          <li><a href="#approach"><span class="pipeline__n">04</span>Подход</a></li>
+          <li><a href="#contact"><span class="pipeline__n">05</span>Контакт</a></li>
+        </ol>
+      </nav>
+
+      <div class="site-header__actions">
+        <span class="status"><i class="dot" aria-hidden="true"></i>Открыта к стажировке</span>
+        <a class="btn btn--wine btn--sm" href="#contact">Связаться</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню" data-burger>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобильное меню -->
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ol class="menu__list">
+      <li><a href="#about"><span class="label label--inv">01</span>Знакомство</a></li>
+      <li><a href="#services"><span class="label label--inv">02</span>Чем полезна</a></li>
+      <li><a href="#skills"><span class="label label--inv">03</span>Навыки</a></li>
+      <li><a href="#approach"><span class="label label--inv">04</span>Подход</a></li>
+      <li><a href="#contact"><span class="label label--inv">05</span>Контакт</a></li>
+    </ol>
+    <div class="menu__foot">
+      <span class="status" style="color:var(--c-text-inv-2)"><i class="dot" aria-hidden="true"></i>Открыта к стажировке</span>
+      <a class="btn btn--paper" href="#contact">Начать диалог <span class="btn__arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="hero__stage">
+        <h1 class="hero__name" id="hero-name">
+          <span class="hero__l1" data-parallax="-0.12">Anastasia</span>
+          <span class="hero__l2" data-parallax="0.08">Dovydenko</span>
+        </h1>
+        <img class="hero__portrait"
+             src="assets/img/portrait.webp"
+             width="1400" height="1601"
+             fetchpriority="high"
+             alt="Анастасия Довыденко, чёрно-белый портрет">
+      </div>
+
+      <div class="hero__info">
+        <div class="hero__pitch">
+          <p class="label label--wine">IT Sales · B2B · Junior</p>
+          <h2 class="hero__title">Перевожу язык IT&#8209;продуктов на язык <em>задач бизнеса</em></h2>
+          <p class="hero__sub">Начинающий специалист по IT-продажам. Нахожу компании, которым продукт действительно нужен, выясняю их задачи и помогаю увидеть ценность решения.</p>
+          <div class="btn-row">
+            <a class="btn btn--wine" href="#contact">Начать диалог <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#approach">Как я работаю</a>
+          </div>
+        </div>
+
+        <!-- Карточка лида: ключевые факты в формате CRM -->
+        <aside class="lead-card" aria-label="Кратко обо мне">
+          <div class="lead-card__head">
+            <span>CRM · Lead card</span>
+            <span>#001</span>
+          </div>
+          <dl class="lead-card__list">
+            <div><dt>Роль</dt><dd>IT Sales · SDR / BDR</dd></div>
+            <div><dt>Фокус</dt><dd>B2B · SaaS · IT-услуги</dd></div>
+            <div><dt>База</dt><dd>IT + экономика</dd></div>
+            <div><dt>Языки</dt><dd>RU · EN</dd></div>
+            <div><dt>Локация</dt><dd>Минск / Remote</dd></div>
+            <div><dt>Статус</dt><dd><i class="dot" aria-hidden="true"></i>Открыта к стажировке</dd></div>
+          </dl>
+          <a class="lead-card__next" href="#contact">
+            <span>Next step</span>
+            <span>Назначить звонок →</span>
+          </a>
+        </aside>
+      </div>
+
+    </section>
+
+    <!-- ================= 01 · ABOUT ================= -->
+    <section class="section about" id="about" data-stage aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__meta" data-reveal>
+            <span class="label">01 / 05 — Lead</span>
+            <span class="label">Знакомство</span>
+          </div>
+          <h2 class="section-head__title" id="about-title" data-reveal>Обо мне</h2>
+        </header>
+
+        <div class="grid-12 about__body">
+          <div class="about__aside" data-reveal>
+            <figure class="about__mini">
+              <span class="label">Сейчас</span>
+              <p>Учусь на стыке IT и экономики, изучаю B2B-продажи и тренирую переговоры на практике.</p>
+            </figure>
+          </div>
+
+          <div class="about__main">
+            <p class="statement" data-reveal>
+              Мне интересны продажи, в которых сначала нужно <em>разобраться</em>&nbsp;— в продукте, в бизнесе клиента и в том, что на самом деле мешает ему расти.
+            </p>
+
+            <div class="about__facts">
+              <article class="fact" data-reveal style="--d:0">
+                <span class="label label--wine">Интересуюсь</span>
+                <h3 class="fact__title">Как компании покупают технологии</h3>
+                <p>B2B SaaS, CRM и автоматизация продаж, IT-аутсорсинг. Мне важно понимать не только продукт, но и путь клиента к решению о покупке.</p>
+              </article>
+              <article class="fact" data-reveal style="--d:1">
+                <span class="label label--wine">Подход</span>
+                <h3 class="fact__title">Сначала вопросы, потом презентация</h3>
+                <p>Не продаю «в лоб». Сначала выясняю ситуацию и критерии выбора, а уже потом показываю, как продукт решает конкретную задачу.</p>
+              </article>
+              <article class="fact" data-reveal style="--d:2">
+                <span class="label label--wine">Ищу</span>
+                <h3 class="fact__title">Команду, где можно расти</h3>
+                <p>Стажировку или junior-позицию: SDR / BDR, Sales Assistant, Junior Account Manager — с наставником и понятными метриками.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · SERVICES ================= -->
+    <section class="section services" id="services" data-stage aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__meta" data-reveal>
+            <span class="label">02 / 05 — Discovery</span>
+            <span class="label">Чем могу быть полезна</span>
+          </div>
+          <h2 class="section-head__title" id="services-title" data-reveal>Чем могу <em>быть полезна</em></h2>
+        </header>
+
+        <div class="grid-12 services__intro">
+          <p class="services__lead" data-reveal>Честно разделяю то, что уже получается уверенно, и то, что активно развиваю. Так проще сразу договориться об ожиданиях.</p>
+          <ul class="legend" data-reveal aria-label="Обозначения">
+            <li><i class="lvl lvl--strong" aria-hidden="true"></i>Сильная сторона</li>
+            <li><i class="lvl" aria-hidden="true"></i>Развиваю</li>
+          </ul>
+        </div>
+
+        <div class="svc-list" data-accordion>
+          <details class="svc" data-reveal>
+            <summary class="svc__row">
+              <span class="svc__n">01</span>
+              <span class="svc__title">Поиск и квалификация лидов</span>
+              <span class="svc__short">Нахожу компании, которым продукт может быть действительно полезен, — а не всех подряд.</span>
+              <span class="svc__lvl"><i class="lvl lvl--strong" aria-hidden="true"></i><span>Сильная сторона</span></span>
+              <span class="svc__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc__body">
+              <ul>
+                <li>Составляю портрет идеального клиента (ICP)</li>
+                <li>Ищу компании и ЛПР через LinkedIn и открытые источники</li>
+                <li>Квалифицирую по BANT: бюджет, полномочия, потребность, сроки</li>
+                <li>Собираю базу в CRM с понятными статусами</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="svc" data-reveal>
+            <summary class="svc__row">
+              <span class="svc__n">02</span>
+              <span class="svc__title">Первый контакт и outreach</span>
+              <span class="svc__short">Пишу письма и сообщения, на которые хочется ответить.</span>
+              <span class="svc__lvl"><i class="lvl lvl--strong" aria-hidden="true"></i><span>Сильная сторона</span></span>
+              <span class="svc__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc__body">
+              <ul>
+                <li>Персонализирую первое касание под компанию и роль собеседника</li>
+                <li>Выстраиваю цепочки follow-up без навязчивости</li>
+                <li>Тестирую формулировки и смотрю, что получает отклик</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="svc" data-reveal>
+            <summary class="svc__row">
+              <span class="svc__n">03</span>
+              <span class="svc__title">Выявление потребностей</span>
+              <span class="svc__short">Задаю вопросы, которые помогают клиенту самому сформулировать задачу.</span>
+              <span class="svc__lvl"><i class="lvl lvl--strong" aria-hidden="true"></i><span>Сильная сторона</span></span>
+              <span class="svc__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc__body">
+              <ul>
+                <li>Готовлю гипотезы о задачах клиента до звонка</li>
+                <li>Использую SPIN-вопросы: ситуация, проблема, последствия, ценность</li>
+                <li>Фиксирую боли и критерии выбора, резюмирую договорённости письменно</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="svc" data-reveal>
+            <summary class="svc__row">
+              <span class="svc__n">04</span>
+              <span class="svc__title">Презентация IT-решений</span>
+              <span class="svc__short">Объясняю продукт через выгоду конкретного клиента, а не через список функций.</span>
+              <span class="svc__lvl"><i class="lvl" aria-hidden="true"></i><span>Развиваю</span></span>
+              <span class="svc__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc__body">
+              <ul>
+                <li>Готовлю презентации и коммерческие предложения</li>
+                <li>Связываю функции продукта с задачами бизнеса и деньгами</li>
+                <li>Отрабатываю демо и ответы на частые вопросы</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="svc" data-reveal>
+            <summary class="svc__row">
+              <span class="svc__n">05</span>
+              <span class="svc__title">Сопровождение сделки в CRM</span>
+              <span class="svc__short">Слежу, чтобы ни один контакт не потерялся между этапами воронки.</span>
+              <span class="svc__lvl"><i class="lvl lvl--strong" aria-hidden="true"></i><span>Сильная сторона</span></span>
+              <span class="svc__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc__body">
+              <ul>
+                <li>Веду карточки сделок, статусы и задачи</li>
+                <li>Ставлю напоминания и не пропускаю follow-up</li>
+                <li>Готовлю простые отчёты по воронке в таблицах</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="svc" data-reveal>
+            <summary class="svc__row">
+              <span class="svc__n">06</span>
+              <span class="svc__title">Переговоры и возражения</span>
+              <span class="svc__short">Учусь вести переговоры так, чтобы обе стороны понимали, на что соглашаются.</span>
+              <span class="svc__lvl"><i class="lvl" aria-hidden="true"></i><span>Развиваю</span></span>
+              <span class="svc__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc__body">
+              <ul>
+                <li>Разбираю типовые возражения: «дорого», «не сейчас», «у нас уже есть»</li>
+                <li>Тренирую переговоры в ролевых кейсах</li>
+                <li>Учусь аргументировать через ценность, а не через скидку</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 · SKILLS ================= -->
+    <section class="section skills" id="skills" data-stage aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__meta" data-reveal>
+            <span class="label">03 / 05 — Qualification</span>
+            <span class="label">Навыки</span>
+          </div>
+          <h2 class="section-head__title" id="skills-title" data-reveal>Навыки <em>в контексте</em> сделки</h2>
+        </header>
+
+        <div class="skills__ctrl" data-reveal>
+          <p class="skills__hint">Выберите этап продажи — и посмотрите, на какие навыки я опираюсь именно на нём.</p>
+          <div class="stage-tabs" role="tablist" aria-label="Этапы продажи" data-tabs>
+            <button class="stage-tab is-active" role="tab" aria-selected="true" data-filter="all">Все</button>
+            <button class="stage-tab" role="tab" aria-selected="false" data-filter="lead"><span>01</span>Поиск</button>
+            <button class="stage-tab" role="tab" aria-selected="false" data-filter="contact"><span>02</span>Контакт</button>
+            <button class="stage-tab" role="tab" aria-selected="false" data-filter="discovery"><span>03</span>Discovery</button>
+            <button class="stage-tab" role="tab" aria-selected="false" data-filter="pitch"><span>04</span>Презентация</button>
+            <button class="stage-tab" role="tab" aria-selected="false" data-filter="deal"><span>05</span>Сделка</button>
+          </div>
+        </div>
+
+        <div class="skills__readout" aria-live="polite" data-readout>
+          <span class="skills__count" data-count>24</span>
+          <p data-desc>навыка в арсенале. Каждый из них работает на конкретном этапе — от поиска компании до подписанного договора.</p>
+        </div>
+
+        <div class="skills__board" data-board>
+          <div class="skill-col" data-reveal style="--d:0">
+            <div class="skill-col__head"><h3>Hard skills</h3></div>
+            <ul class="skill-list">
+              <li data-s="lead">Построение ICP</li>
+              <li data-s="lead">Квалификация по BANT</li>
+              <li data-s="lead discovery">Анализ рынка и конкурентов</li>
+              <li data-s="contact">Холодный outreach</li>
+              <li data-s="discovery">SPIN-вопросы</li>
+              <li data-s="pitch">Подготовка КП</li>
+              <li data-s="pitch deal">Основы SaaS-метрик: MRR, LTV, churn</li>
+              <li data-s="pitch deal">Работа с возражениями</li>
+              <li data-s="contact deal">Ведение воронки продаж</li>
+            </ul>
+          </div>
+          <div class="skill-col" data-reveal style="--d:1">
+            <div class="skill-col__head"><h3>Soft skills</h3></div>
+            <ul class="skill-list">
+              <li data-s="discovery contact">Активное слушание</li>
+              <li data-s="contact deal">Деловая переписка</li>
+              <li data-s="discovery pitch">Структурное мышление</li>
+              <li data-s="discovery">Эмпатия</li>
+              <li data-s="pitch">Публичные выступления</li>
+              <li data-s="contact">Устойчивость к отказам</li>
+              <li data-s="lead deal">Самоорганизация</li>
+            </ul>
+          </div>
+          <div class="skill-col" data-reveal style="--d:2">
+            <div class="skill-col__head"><h3>Инструменты</h3></div>
+            <ul class="skill-list">
+              <li data-s="contact deal">CRM: Bitrix24, HubSpot</li>
+              <li data-s="lead contact">LinkedIn</li>
+              <li data-s="lead deal">Google Sheets / Excel</li>
+              <li data-s="discovery pitch">Zoom / Google Meet</li>
+              <li data-s="pitch">Canva / Figma для КП</li>
+              <li data-s="discovery">Miro</li>
+              <li data-s="deal">Notion</li>
+              <li data-s="lead">ChatGPT для ресёрча</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04 · APPROACH ================= -->
+    <section class="section section--ink approach" id="approach" data-stage data-theme="dark" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__meta" data-reveal>
+            <span class="label label--inv">04 / 05 — Proposal</span>
+            <span class="label label--inv">Подход</span>
+          </div>
+          <h2 class="section-head__title" id="approach-title" data-reveal>Как я <em>работаю</em></h2>
+        </header>
+
+        <ol class="steps" data-steps>
+          <li class="step" data-reveal style="--d:0">
+            <span class="step__n">01</span>
+            <h3 class="step__title">Исследую</h3>
+            <p>До первого письма изучаю компанию: чем она живёт, кто конкуренты и где может «болеть».</p>
+          </li>
+          <li class="step" data-reveal style="--d:1">
+            <span class="step__n">02</span>
+            <h3 class="step__title">Спрашиваю</h3>
+            <p>На встрече больше слушаю, чем говорю. Цель — понять ситуацию клиента, а не продать с порога.</p>
+          </li>
+          <li class="step" data-reveal style="--d:2">
+            <span class="step__n">03</span>
+            <h3 class="step__title">Связываю</h3>
+            <p>Соотношу задачу с возможностями продукта и честно говорю, если решение не подходит.</p>
+          </li>
+          <li class="step" data-reveal style="--d:3">
+            <span class="step__n">04</span>
+            <h3 class="step__title">Договариваюсь</h3>
+            <p>Фиксирую следующие шаги, сроки и ответственных — письменно, сразу после разговора.</p>
+          </li>
+          <li class="step" data-reveal style="--d:4">
+            <span class="step__n">05</span>
+            <h3 class="step__title">Остаюсь на связи</h3>
+            <p>Возвращаюсь с обещанным в срок. Подписанный договор — начало отношений, а не финал.</p>
+          </li>
+        </ol>
+
+        <div class="grid-12 approach__bottom">
+          <!-- Демонстрация навыка: фрагмент discovery-звонка -->
+          <figure class="call" data-call data-reveal>
+            <figcaption class="call__head">
+              <span class="label label--inv"><i class="dot dot--signal" aria-hidden="true"></i>Discovery-звонок · фрагмент</span>
+              <span class="label label--inv call__time" data-call-time>00:00</span>
+            </figcaption>
+            <ol class="call__log">
+              <li class="msg msg--them"><span class="msg__who">Клиент</span><p>Нам нужна CRM. Сколько стоит?</p></li>
+              <li class="msg msg--me"><span class="msg__who">Анастасия</span><p>Расскажу. А чтобы предложить подходящий вариант — где сейчас теряются заявки?</p></li>
+              <li class="msg msg--them"><span class="msg__who">Клиент</span><p>Менеджеры ведут всё в Excel, часть заявок просто забывают.</p></li>
+              <li class="msg msg--me"><span class="msg__who">Анастасия</span><p>Сколько заявок в месяц примерно? И кто смотрит отчёты — вы или руководитель отдела?</p></li>
+            </ol>
+            <p class="call__typing" aria-hidden="true"><span></span><span></span><span></span></p>
+          </figure>
+
+          <div class="principles">
+            <p class="label label--inv" data-reveal>Принципы</p>
+            <ul>
+              <li data-reveal style="--d:0">
+                <h3>Цена без контекста — просто цифра</h3>
+                <p>Сначала понимаю задачу, потом говорю о стоимости. Так клиент сравнивает ценность, а не прайсы.</p>
+              </li>
+              <li data-reveal style="--d:1">
+                <h3>Follow-up в течение 24 часов</h3>
+                <p>После каждой встречи — короткое письмо: что обсудили, что дальше и кто за что отвечает.</p>
+              </li>
+              <li data-reveal style="--d:2">
+                <h3>Не продаю то, что не нужно</h3>
+                <p>Неподходящая сделка сегодня — потерянное доверие завтра. Честный отказ тоже результат.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 · CONTACT ================= -->
+    <section class="section contact" id="contact" data-stage data-theme="wine" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <div class="section-head__meta" data-reveal>
+            <span class="label label--inv">05 / 05 — Closed-won</span>
+            <span class="label label--inv">Контакт</span>
+          </div>
+        </header>
+
+        <h2 class="contact__title" id="contact-title" data-reveal>Давайте <em>обсудим</em>, чем я могу быть полезна вашей команде</h2>
+
+        <div class="grid-12 contact__body">
+          <div class="contact__left" data-reveal>
+            <p class="contact__lead">Открыта к стажировкам и junior-позициям в IT-продажах. Отвечаю в течение рабочего дня.</p>
+            <ul class="contact__roles" aria-label="Интересующие позиции">
+              <li class="chip">SDR / BDR</li>
+              <li class="chip">Sales Assistant</li>
+              <li class="chip">Junior Account Manager</li>
+              <li class="chip">Стажировка</li>
+            </ul>
+            <p class="contact__clock label label--inv"><i class="dot" aria-hidden="true"></i>Минск · <span data-clock>--:--</span> · <span data-clock-note>на связи</span></p>
+          </div>
+
+          <ul class="channels" data-reveal>
+            <li>
+              <button class="channel" type="button" data-copy="anastasiadovydenko16@gmail.com">
+                <span class="label label--inv">Email</span>
+                <span class="channel__value">anastasiadovydenko16@gmail.com</span>
+                <span class="channel__act" data-copy-label>Копировать</span>
+              </button>
+            </li>
+            <li>
+              <a class="channel" href="https://t.me/neihow" target="_blank" rel="noopener">
+                <span class="label label--inv">Telegram</span>
+                <span class="channel__value">@neihow</span>
+                <span class="channel__act">Написать ↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.linkedin.com/in/anastasiadovydenko?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener">
+                <span class="label label--inv">LinkedIn</span>
+                <span class="channel__value">Anastasia Dovydenko</span>
+                <span class="channel__act">Профиль ↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span class="label label--inv">© 2026 Anastasia Dovydenko</span>
+      <span class="label label--inv">IT Sales · B2B · Минск</span>
+      <a class="label label--inv site-footer__top" href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
